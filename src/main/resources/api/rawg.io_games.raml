@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: Rawg.io_games-sys
+version: v1
+description: The goal is to manage a catalog of games that we have to create on MongoDB
+
+types:
+  games: !include Datatypes/dataType.raml
+
+/videosgames:
+  description: List All games on RAWG.io on MongoDB
+  displayName: List Games
+  get:
+    description: List all games
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              !include Examples/example.raml
+      401:
+        description: Unauthorized or invalid client application
+         credential
+

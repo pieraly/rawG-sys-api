@@ -1,0 +1,7 @@
+listener:
+  host: "localhost"
+  port: "8083"
+
+request:
+  host: "api.rawg.io"
+  path: "/api"
