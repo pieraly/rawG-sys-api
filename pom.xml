@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>videos_games-sapi-rawg.io</artifactId>
@@ -8,11 +9,16 @@
 	<packaging>mule-application</packaging>
 
 	<name>games-sapi-rawg.io</name>
+	
+	<parent>
+        <groupId>com.mycompany</groupId>
+        <artifactId>pom_parent_mongo</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
 
-	<properties>
+<!-- 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<app.runtime>4.4.0-20230123</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
 	</properties>
@@ -62,10 +68,10 @@
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
-			<version>1.8.1</version>
+			<version>1.9.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-	</dependencies>
+	</dependencies>  
 
 	<repositories>
 		<repository>
@@ -92,6 +98,6 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories>  -->
 
-</project>
+</project> 
